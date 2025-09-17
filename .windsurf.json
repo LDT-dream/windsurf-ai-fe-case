@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "activationModes": {
+      "windsurf/rules/java-rules": "always",
+      "windsurf/rules/*-rules": "auto"
+    },
+    "filePatterns": {
+      "*.java": {
+        "rules": ["windsurf/rules/java-rules"],
+        "activation": "always"
+      },
+      "*.tsx": {
+        "rules": ["windsurf/rules/frontend-rules"],
+        "activation": "onRequest"
+      }
+    }
+  },
+  "settings": {
+    "enableRuleInheritance": true,
+    "strictMode": false
+  }
+}

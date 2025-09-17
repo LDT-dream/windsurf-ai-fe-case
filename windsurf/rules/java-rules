@@ -1,0 +1,5 @@
+# Java/Spring Boot 团队规范
+- 统一使用 JDK 17+
+- Controller 参数用 @Valid 注解，异常用统一处理器
+- 单元测试用 JUnit5，mock测试使用Mocktio,集成测试隔离 Postgres/Redis
+- 注释风格统一 Javadoc，公共方法必须有用途、参数、返回说明

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "java-rules": {
+      "activationMode": "always",
+      "priority": "high",
+      "scope": ["*.java", "*.kt"]
+    },
+    "frontend-rules": {
+      "activationMode": "onRequest",
+      "priority": "medium",
+      "scope": ["*.tsx", "*.ts", "*.jsx", "*.js"]
+    }
+  },
+  "globalSettings": {
+    "defaultActivationMode": "auto",
+    "enableFileWatching": true,
+    "cacheRules": true
+  }
+}
