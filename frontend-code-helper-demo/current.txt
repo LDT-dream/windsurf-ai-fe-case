@@ -1,0 +1,9 @@
+Frontend Code Helper demo channel
+
+Version: 1
+
+This text was loaded at runtime from a public HTTPS text file.
+The extension package itself does not need to change when this text changes.
+
+Demo message:
+If you can see this inside VS Code after running "Frontend Code Helper: Refresh Notes", the remote text channel is working.
