@@ -1,9 +1,117 @@
-Frontend Code Helper demo channel
+WorkOS Company PC Inventory
 
-Version: 1
+Run a read-only inspection of the current WorkOS setup and this company computer.
 
-This text was loaded at runtime from a public HTTPS text file.
-The extension package itself does not need to change when this text changes.
+Goal:
+Understand what WorkOS can actually do today and whether it can be used to systematically organize the company PC and work environment.
 
-Demo message:
-If you can see this inside VS Code after running "Frontend Code Helper: Refresh Notes", the remote text channel is working.
+Rules:
+- Read only.
+- Do not modify, move, delete, install, commit, or change configuration.
+- Do not expose source code, credentials, tokens, cookies, internal URLs, logs, or sensitive business data.
+- Directory-level and capability-level summaries are enough.
+- If something is not actually verified, mark it as "not verified".
+
+1. WorkOS
+
+Check and report:
+- WorkOS Skill entry point.
+- WorkOS root directory.
+- Main rule / workflow / script / index locations.
+- How the Skill is loaded and invoked.
+- Whether it supports:
+  - multi-step tasks
+  - multiple subtasks in one session
+  - long-running tasks
+  - resume / recovery
+  - error recovery
+  - persistent state
+- For every supported capability, point to the actual implementation location.
+
+2. Available capabilities
+
+For each item, return:
+available / unavailable / not verified
+
+Also include the real invocation method when known.
+
+Check:
+- local file read
+- file search
+- create file
+- edit file
+- move / rename file
+- PowerShell / Terminal / Shell
+- Git
+- GitHub
+- VS Code
+- browser
+- Confluence
+- Jira
+- Microsoft 365 / Copilot 365
+- internal APIs
+- MCP
+- Tool / Plugin / Agent
+- any other WorkOS-integrated capability
+
+3. Company PC work environment
+
+Only inspect what is useful for future organization:
+
+- OS
+- major accessible work directories
+- common code / repo roots
+- Desktop / Downloads / Documents access
+- obvious work document locations
+- main Git repositories
+- obvious duplicate repos, old copies, temp directories, or scattered work material
+
+Keep this at directory level. Do not dump large directory trees or sensitive file contents.
+
+4. What WorkOS already manages
+
+Check:
+- registered projects
+- workflows
+- skills / rules
+- indexes / registry / knowledge base
+- whether current company projects are recorded
+- whether work processes are recorded
+- whether Confluence / Jira are integrated
+- what important work information is still outside WorkOS
+
+5. Execution boundary
+
+Classify future actions into:
+
+A. WorkOS can already do automatically
+B. WorkOS can do, but should ask for confirmation first
+C. WorkOS currently cannot do
+
+For C, state the exact missing capability.
+
+6. Final snapshot
+
+Return this compact structure:
+
+WorkOS entry:
+WorkOS root:
+Rules entry:
+Available tools:
+Shell:
+Git:
+GitHub:
+VS Code:
+Confluence:
+Jira:
+M365/Copilot:
+Main work directories:
+Repos:
+Existing indexes:
+Long-task capability:
+Recovery capability:
+Main limitations:
+Recommended next step:
+
+Keep the answer factual and compact.
+Do not make changes during this inspection.
